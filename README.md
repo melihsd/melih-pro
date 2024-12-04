@@ -1,26 +1,38 @@
-# melih.pro 🌐  
+# sv
 
-This repository contains the source code for **melih.pro**, a static site built with **SvelteKit** and styled using **TailwindCSS**. The site is packaged as static files (no SSR) and deployed to a **Google Cloud Storage** bucket.  
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-## Usage  
-### Build and Deploy  
-1. Run the build command to generate static files: `bun run build`  
-2. Upload the contents of the `build/` directory to any online Hosting Platform or Cloud Bucket.  
+## Creating a project
 
-### Local Development  
-1. Start the development server: `bun run dev`  
-2. Access the site at http://localhost:5173.  
+If you're seeing this, you've probably already done this step. Congrats!
 
-## Setup Development Environment  
-1. Install **Bun**: Visit https://bun.sh to install.  
-2. Clone this repository.
-3. Install dependencies: `bun install`.
+```bash
+# create a new project in the current directory
+npx sv create
 
-## Tech Stack  
-- **SvelteKit**  
-- **TailwindCSS**  
-- **Bun**  
-- **Google Cloud Storage**  
+# create a new project in my-app
+npx sv create my-app
+```
 
-## Visit  
-https://melih.pro  
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
