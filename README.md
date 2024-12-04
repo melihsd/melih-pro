@@ -1,38 +1,35 @@
-# sv
+# melih.pro 🌐  
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+This repository contains the source code for **melih.pro**, a static site built with **SvelteKit** and styled using **TailwindCSS**. The site is  build as static files (no SSR) and deployed to **Cloudflare Pages**.  
 
-## Creating a project
+## Usage  
+### Build and Deploy  
+1. Run the build command to generate static files: `bun run build`  
+2. Upload the contents of the `build/` directory to any online Hosting Platform or Cloud Bucket.  
 
-If you're seeing this, you've probably already done this step. Congrats!
+### Local Development  
+1. Start the development server: `bun run dev`  
+2. Access the site at http://localhost:5173.  
 
-```bash
-# create a new project in the current directory
-npx sv create
+## Setup Development Environment  
+1. Install **Bun**: Visit https://bun.sh to install.  
+2. Clone this repository.
+3. Install dependencies: `bun install`.
 
-# create a new project in my-app
-npx sv create my-app
-```
+## Tech Stack  
+- **SvelteKit** as the framework
+- **Typescript** for type safety
+- **Drizzle** for easy sqlite db schemas and type integration
+- **Prettier** for formatting
+- **ESLint** for linting
+- **Vitest** for unit testing
+- **Playwright** for e2e testing
+- **TailwindCSS** for styling
+- **MDSvex** for easier markdown writing
+- **Paraglide** for translations
 
-## Developing
+## Hosting  
+The site is hosted on **Cloudflare Pages** in combination with **Cloudflare D1**.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Visit  
+https://melih.pro  
