@@ -1,0 +1,10 @@
+name = "melih-pro"
+main = "src/lib/server/db/index.ts"
+compatibility_date = "2024-12-11"
+node_compat = true
+
+[[ d1_databases ]]
+binding = "DB"
+database_name = "melih-pro"
+database_id = "71e70a74-2fc5-4cb1-9333-318e7e5f3304 "
+migrations_dir = "migrations"
