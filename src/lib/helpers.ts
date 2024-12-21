@@ -1,0 +1,10 @@
+const slugify = (stringValue: string): string => {
+	return stringValue
+		.toLowerCase()
+		.replace(/\s+/g, '-')
+		.replace(/[^\w\-]+/g, '')
+		.replace(/\-\-+/g, '-')
+		.replace(/^-+/, '')
+		.replace(/-+$/, '');
+};
+export { slugify };

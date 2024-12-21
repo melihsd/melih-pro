@@ -1,7 +1,6 @@
 import { sqliteTable } from 'drizzle-orm/sqlite-core';
 import * as t from 'drizzle-orm/sqlite-core';
 import { generateUniqueString } from './utils';
-import { updated } from '$app/stores';
 
 const posts = sqliteTable(
 	'posts',
