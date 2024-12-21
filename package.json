@@ -13,8 +13,10 @@
 		"test:unit": "vitest",
 		"test": "npm run test:unit -- --run && npm run test:e2e",
 		"test:e2e": "playwright test",
-		"db:push": "drizzle-kit push",
+		"db:generate": "drizzle-kit generate",
 		"db:migrate": "drizzle-kit migrate",
+		"db:seed": "drizzle-kit seed",
+		"db:reset": "drizzle-kit reset",
 		"db:studio": "drizzle-kit studio"
 	},
 	"devDependencies": {
